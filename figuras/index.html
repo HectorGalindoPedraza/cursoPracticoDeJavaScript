@@ -5,9 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geométricas | Curso practico de JS</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <h1>Figuras geométricas</h1>
-    <script src="./index.js"></script>
+    <div class="size">
+        <header>
+            <h1>Figuras Geométricas</h1>
+            <p>Este es el primer taller del curso práctico de JavaScript.</p>
+        </header>
+        <section class="cuadrado-container">
+            <h2>Calcula el area y perimetro de un cuadrado</h2>
+             <form>
+                <div class="f-container">
+                 <label for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado:</label>
+                 <input id="inputCuadrado" type="number" placeholder="LADO">
+                </div>
+                <div class="b-container">
+                 <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+                 <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+                </div>
+                </form>
+        </section>
+        <section class="triangulo-container">
+            <h2>Calcula el area y perimetro de un triangulo</h2>
+            <form>
+                <div class="f-container">
+                <label for="inputBase">BASE:</label>
+                <input type="number" id="inputBase"   placeholder="BASE">
+                </div>
+    
+                <div class="f-container">
+                <label for="inputAltura">ALTURA:</label>
+                <input type="number" id="inputAltura" placeholder="ALTURA">
+                </div>  
+    
+                <div class="f-container">
+                <label for="inputLado1">LADO 1:</label>
+                <input type="number" id="inputLado1" placeholder="LADO 1">
+                </div>
+    
+                <div class="f-container">
+                <label for="inputLado2">LADO 2:</label>
+                <input type="number" id="inputLado2" placeholder="LADO 2">
+                </div>
+                <div class="b-container">
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+                </div>
+            </form>
+        </section>
+        <section class="circulo-container">
+            <h2>Calcula el diametro, perimetro y area de un circulo</h2>
+            <form>
+                <div class="f-container">
+                <label for="inputDiametro">RADIO:</label>
+                <input type="number" id="inputRadio" placeholder="Ingresa el radio del circulo">
+                </div>
+                <div class="b-container">
+                    <button type="button" onclick="calcularDiametroCirculo()">Calcular Diametro</button>
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular Perimetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular Área</button>
+                </div>
+            </form>
+        </section>
+        <section class="trianguloIsosceles">
+            <h2>Calcula la altura de un triangulo isosceles</h2>
+            <form>
+                <div class="f-container">
+                    <label for="isoscelesLado1">LADO 1</label>
+                    <input type="number"id="isoscelesLado1" placeholder="LADO 1">
+                    <label for="isoscelesLado2">LADO 2</label>
+                    <input type="number" id="isoscelesLado2" placeholder="LADO 2">
+                    <label for="isoscelesBase">BASE</label>
+                    <input type="number" id="isoscelesBase" placeholder="BASE">
+                </div>
+                <div class="b-container">
+                    <button type="button" onclick="calcularIsoscelesHeight()">Calcular Altura</button>
+                </div>
+            </form>
+        </section>
+        </div>
+        <script src="./index.js"></script>
 </body>
 </html>
