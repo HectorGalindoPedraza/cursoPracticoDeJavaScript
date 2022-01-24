@@ -11,7 +11,7 @@ function perimetroCuadrado(lado){
 function areaCuadrado(lado){
     return lado * lado;
 }
-// console.log('El area del cuadrado es: ' + areaCuadrado + 'cm2');
+
 console.groupEnd();
 
 // Código del triánagulo
@@ -44,7 +44,7 @@ console.group('Circulos');
         return diametro * pi;
     }
     
-    // ÁREA
+    // ÁREA  
     function areaCirculo(radio){
         return (radio * radio) * pi;
     }
