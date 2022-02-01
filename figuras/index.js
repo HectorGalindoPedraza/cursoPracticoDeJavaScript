@@ -61,7 +61,7 @@ function isoscelesHeight(lado1, lado2, base) {
   }
 }
 
-// Aqui interactuamos con el HTML 
+// Aqui interactuamos con el HTML  
 
 // Cuadrado
 function calcularPerimetroCuadrado(){
